@@ -1,12 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Orb from './ReactBits/Orb/Orb';
-
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-    
+     dhjksabgvdjashvdkja
     </div>
   );
 }
