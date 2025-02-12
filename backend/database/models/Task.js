@@ -10,4 +10,4 @@ const TaskSchema = new mongoose.Schema({
     timestamps: true
 });
 
-module.export = mongoose.model("Task", TashSchema);
+module.export = mongoose.model("Task", TaskSchema);
