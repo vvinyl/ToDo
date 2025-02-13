@@ -1,6 +1,14 @@
+import { LoginLink } from "../../components/LoginLink/LoginLink";
+import { RegisterLink } from "../../components/RegisterLink/RegisterLink";
+import { Header } from "../../components/Header/Header";
+import { Container, Row, Col } from "react-bootstrap";
 
-export default AppLoaded = () => {
+export const AppLoaded = () => {
     return(
-        abcd
+        <>
+        <Header/>
+        <LoginLink/>
+        <RegisterLink/>
+        </>
     )
 }

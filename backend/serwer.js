@@ -37,6 +37,8 @@ app.use('/user', userController);
 
 const PORT = 3001;
 
-app.llisten(PORT, () => {
+app.listen(PORT, () => {
     console.log(`Serwer działa na porcie ${PORT}`)
 })
+
+// mongodb+srv://admin:<db_password>@todolist.omxmx.mongodb.net/

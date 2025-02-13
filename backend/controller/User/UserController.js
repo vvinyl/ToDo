@@ -6,6 +6,8 @@ const jwt = require("jsonwebtoken")
 const User = require("../../database/models/UserSchema")
 const Task = require("../../database/models/Task")
 
+const authMiddleware = require("../../middleware/authMiddleware")
+
 // REJESTRACJA
 router.post('/userRegister', async (req, res) => {
     try{
@@ -62,3 +64,27 @@ router.post('/userLogin', async (req, res) => {
         res.status(500).json({message: "Błąd serwera przy logowaniu. ", err})
     }
 })
+
+// SZUKANIE USERA
+router.get("/getUser", authMiddleware, async (req, res) => {
+    try{
+        const userId = req.userId;
+
+        if(userId === 0){
+            return res.status(401).json({message: "Brak autoryzacji"})
+        }
+
+        const user = await User.findById(userId)
+                                        .select('-password')
+                                        
+        if(!user){
+            return res.status(404).json({message: 'Użytkownik nie jest zalogowany'});
+        }
+
+        res.json({user})
+    } catch(err){
+        res.status(500).json({message: "Błąd serwera: ", err})
+    }
+})
+
+module.exports = router;

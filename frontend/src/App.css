@@ -9,3 +9,10 @@
 *{
   font-family: "Jaro", sans-serif;
 }
+
+:root{
+  --header-bg: #A8D5E3;
+  --app-background: #F2F0EA;
+  --containers-background: #FF78AC;
+  background-color: var(--app-background);
+}
