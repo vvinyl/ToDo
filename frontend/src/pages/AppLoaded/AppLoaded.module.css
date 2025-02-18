@@ -1,0 +1,10 @@
+.header{
+    min-height: 15vh;
+}
+
+.przyciski{
+    min-height: 85vh;
+    width: 75vw;
+    min-width: 75vw;
+    display: flex;
+}

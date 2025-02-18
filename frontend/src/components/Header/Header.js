@@ -1,5 +1,6 @@
 import BlurText from "../../ReactBits/BlurText/BlurText"
 import styles from "./Header.module.css"
+import {Container} from "react-bootstrap"
 
 export const Header = () => {
     const handleAnimationComplete = () => {
@@ -7,14 +8,15 @@ export const Header = () => {
     }
 
     return(
-        <div className={styles.header}>
+        <Container fluid
+            className={`${styles.header} p-0 m-0`}>
             <BlurText
-                text = "T o D o L i s t"
+                text = "To Do List"
                 delay = {150}
-                animatedBy = "letters"
+                animatedBy = "words"
                 direction = "top"
                 onAnimationComplete={handleAnimationComplete}
             />
-        </div>
+        </Container>
     )
 }

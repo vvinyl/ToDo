@@ -16,3 +16,10 @@
   --containers-background: #FF78AC;
   background-color: var(--app-background);
 }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Zapobiega przewijaniu poziomemu */
+}
