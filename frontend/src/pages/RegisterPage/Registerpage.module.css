@@ -1,0 +1,45 @@
+.mainBox{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.back{
+    background-color: var(--containers-background);
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    margin: 0.5rem auto 0 auto;
+    text-align: center;
+    width: 20%;
+    padding: 5%;
+}
+
+
+.registerContainer{
+    font-size: 2rem;
+    background-color: var(--containers-background);
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 2rem;
+}
+
+.col{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.width{
+    width: 100%;
+}
+
+.form{
+    width: 70%;
+    margin-left: 20%;
+}

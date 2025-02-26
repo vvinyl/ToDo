@@ -34,7 +34,7 @@ export const UserProvider = ({ children }) => {
     }, []);
 
     if(loading){
-        return <div>Ładowanie danych</div>;
+        return <div>Loading...</div>;
     }
 
     return (
